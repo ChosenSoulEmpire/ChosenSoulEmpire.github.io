@@ -917,8 +917,14 @@ input[type='submit']:hover {
         }
     }
 }
+@media screen and (max-width: 520px) {
+    #crisis-content {
+        padding: 20px;
+    }
+}
 @media screen and (max-width: 370px) {
     #crisis-content {
+        padding: 15px;
         ol {
             font-size: 1rem;
         }
