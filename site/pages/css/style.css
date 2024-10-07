@@ -667,7 +667,7 @@ input[type='submit']:hover {
     }
     #links-container{
         flex-wrap: nowrap;
-        row-gap: 60px;
+        row-gap: 30px;
     }
     #links-container {
         padding: 20px;
