@@ -239,7 +239,8 @@
     }
 }
 #columns {
-    display: grid;
+    visibility: hidden;
+    display: none;
     grid-template-columns: 1200px 1fr;
 }
 #healing {
