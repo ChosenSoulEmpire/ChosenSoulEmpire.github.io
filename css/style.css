@@ -47,6 +47,8 @@
     height: 80vh;
     width: 100vw;
     object-fit: cover;
+    border-bottom: 3px double black;
+    padding-bottom: 10px;
 }
 
 
@@ -104,7 +106,7 @@
 /* Space Below */
 
 .spacer {
-    height: 15vh;
+    height: 8vh;
     background: linear-gradient(0deg, #B7AB9D, #FBEDD2);
 }
 
@@ -128,25 +130,26 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    border-bottom: 3px double black;
-    margin: 20px;
-    p {
-        margin: 24px auto;
-        width: 300px;
-    }
-    #mission-container {
-        text-align: center;
-    }
+    margin: 50px 20px;
 }
-#mission-container h2 {
-    font-size: 2.75rem;
-}
-#mission-container p {
-    width: 70%;
-    font-size: 1.5rem;
+#mission-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin: 0px 12px;
+        width: 100%;
+    }
 }
 #mission-img {
-    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+        margin: 0px 12px;
+        width: 100%;
+    }
 }
 
 /* Single Column Styles  */
