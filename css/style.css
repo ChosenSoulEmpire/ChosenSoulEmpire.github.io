@@ -155,21 +155,18 @@
 /* Single Column Styles  */
 
 .single-column {
-    width: 50%;
+    width: 60%;
     min-width: 330px;
     margin: 0px auto;
-    h2 {
-        text-align: center;
-        margin: 24px 0px;
-        font-size: 2.75rem;
-    }
     p {
         text-align: center;
         margin: 20px 0px;
+        padding-top: 50px;
         font-size: 1.5rem;
     }
     img {
-        margin-left: 180px;
+        padding-top: 50px;
+        width: 100%;
     }
 }
 
@@ -183,6 +180,20 @@
     align-items: center;
     flex: 1;
     min-width: 330px;
+}
+#eleven {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    min-width: 330px;
+    padding: 0px 50px;
+}
+#forgiveness img {
+    width: 500px;
+}
+#eleven-eleven img {
+    width: 100%;
 }
 #our-story {
     text-align: center;
@@ -567,9 +578,6 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 1400px) {
-    .single-column img {
-        margin-left: 20px;
-    }
     #two-columns img {
         width: 500px;
     }
@@ -581,9 +589,6 @@ input[type='submit']:hover {
     .single-column p {
         font-size: 1.145rem;
     }
-    .single-column img {
-        margin-left: 0px;
-    }
     #mission-container p {
         font-size: 1.145rem;
     }
@@ -591,9 +596,6 @@ input[type='submit']:hover {
 @media screen and (max-width: 1200px) {
     .single-column {
         width: 70%;
-    }
-    .single-column img {
-        margin-left: 70px;
     }
     #two-columns {
         flex-direction: column;
@@ -632,10 +634,6 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 980px) {
-    .single-column img {
-        width: 60%;
-        margin-left: 145px;
-    }
     #ourstory-img img {
         width: 60%;
         margin-left: 135px;
@@ -687,9 +685,6 @@ input[type='submit']:hover {
     #mission-container h2 {
         font-size: 2.125rem;
     }
-    .single-column h2 {
-        font-size: 2.125rem;
-    }
     #our-story h2 {
         font-size: 2.125rem;
     }
@@ -723,9 +718,6 @@ input[type='submit']:hover {
     #mission-img {
         display: flex;
         justify-content: center;
-    }
-    .single-column img  {
-        margin-left: 120px;
     }
     #ourstory-img img {
         margin-left: 115px;
@@ -764,15 +756,9 @@ input[type='submit']:hover {
     #mission-container p {
         font-size: 1rem;
     }
-    .single-column h2 {
-        font-size: 1.75rem;
-    }
     .single-column p {
         font-size: 1rem;
         padding: 0px 24px;
-    }
-    .single-column img  {
-        margin-left: 80px;
     }
     #our-story h2 {
         font-size: 1.75rem;
