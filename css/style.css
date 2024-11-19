@@ -23,7 +23,7 @@
     font-size: 1.25rem;
 }
 #links-container img {
-    width: 125px;
+    width: 200px;
 }
 .container {
     display: grid;
@@ -71,11 +71,10 @@
     justify-content: center;
     align-items: center;
     grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: 
-    "logo links ."
-    "logo copy ."
-    ;
     background-color: #FFFBF4;
+    img {
+        width: 200px;
+    }
     a {
         text-decoration: none;
         color: black;
@@ -85,15 +84,9 @@
 #footer a.topnav:hover {
     text-decoration: underline;
 }
-#logo-container img {
-    grid-area: logo;
-    width: 125px;
-    margin: auto;
-}
 .f-content ul {
     gap: 10rem;
     font-size: 1.125rem;
-    grid-area: links;
     list-style: none;
     display: flex;
 }
