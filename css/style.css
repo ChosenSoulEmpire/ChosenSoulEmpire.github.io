@@ -70,7 +70,11 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr auto 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "content"
+    "copy"
+    ;
     background-color: #FFFBF4;
     img {
         width: 200px;
@@ -89,9 +93,14 @@
     font-size: 1.125rem;
     list-style: none;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: content;
 }
 #copyright {
     grid-area: copy;
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-bottom: 30px;
 }
@@ -148,7 +157,7 @@
 /* Single Column Styles  */
 
 .single-column {
-    width: 60%;
+    width: 72%;
     min-width: 330px;
     margin: 0px auto;
     p {
@@ -573,14 +582,58 @@ input[type='submit']:hover {
         width: 500px;
     }
 }
+@media screen and (max-width: 1385px) {
+    .container {
+        grid-template-columns: 1fr auto 80px;
+    }
+    #links-container{
+        flex-wrap: nowrap;
+        row-gap: 40px;
+    }
+    #links-container {
+        padding: 20px;
+    }
+    #links-container {
+        flex-direction: column;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 10;
+        height: 100%;
+        width: 300px;
+        background-color: #FFFBF4;
+        box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
+        transition: 0.75s ease-out;
+    }
+    #links-container a {
+        height: auto;
+        width: 100%;
+        padding: 40px 0px;
+    }
+    .open-sidebar-btn, .close-sidebar-btn {
+        display: block;
+    }
+    #sidebar-active:checked ~ #links-container {
+        right: 0;
+    }
+    #sidebar-active:checked ~ #overlay {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+    #our-story h2 {
+        font-size: 2.125rem;
+    }
+}
 @media screen and (max-width: 1250px) {
     #ourstory-img {
         padding: 0px;
     }
     .single-column p {
-        font-size: 1.145rem;
-    }
-    #mission-container p {
         font-size: 1.145rem;
     }
 }
@@ -630,56 +683,6 @@ input[type='submit']:hover {
         margin-left: 135px;
     }
 }
-@media screen and (max-width: 895px) {
-    .container {
-        grid-template-columns: 1fr auto 80px;
-    }
-    #links-container{
-        flex-wrap: nowrap;
-        row-gap: 30px;
-    }
-    #links-container {
-        padding: 20px;
-    }
-    #links-container {
-        flex-direction: column;
-        justify-content: flex-start;
-        position: fixed;
-        top: 0;
-        right: -100%;
-        z-index: 10;
-        height: 100%;
-        width: 300px;
-        background-color: #FFFBF4;
-        box-shadow: -5px 0px 5px rgba(0, 0, 0, 0.25);
-        transition: 0.75s ease-out;
-    }
-    #links-container a {
-        height: auto;
-        width: 100%;
-        padding: 40px 0px;
-    }
-    .open-sidebar-btn, .close-sidebar-btn {
-        display: block;
-    }
-    #sidebar-active:checked ~ #links-container {
-        right: 0;
-    }
-    #sidebar-active:checked ~ #overlay {
-        height: 100%;
-        width: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-    }
-    #mission-container h2 {
-        font-size: 2.125rem;
-    }
-    #our-story h2 {
-        font-size: 2.125rem;
-    }
-}
 @media screen and (max-width: 800px){
     #heal-imgs {
         margin: 6px 16px;
@@ -697,15 +700,6 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 775px) {
-    #mission-container {
-        padding: 30px;
-        p {
-            width: 100%;
-        }
-    }
-    #mission-img img {
-        width: 60%;
-    }
     #mission-img {
         display: flex;
         justify-content: center;
