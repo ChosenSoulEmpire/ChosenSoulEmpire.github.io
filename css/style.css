@@ -366,11 +366,21 @@
 
 /* Autism Page */
 
+#autism-single {
+    width: 80%;
+    min-width: 330px;
+    margin: 0px auto;
+    img {
+        width: 80%;
+    }
+}
 #autism-comingsoon {
-    margin: 150px 100px;
+    margin: 0px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
 }
 #autism-title {
-    margin: 50px 100px;
+    margin: 100px 0px 40px 0px;
     p {
         font-size: 2.25rem;
     }
@@ -832,9 +842,8 @@ input[type='submit']:hover {
     }
     #autism-comingsoon {
         grid-area: image;
-        width: 65%;
         margin: 0px auto;
-        width: 80%;
+        width: 100%;
         padding-bottom: 50px;
     }
     #insurance-comingsoon {
