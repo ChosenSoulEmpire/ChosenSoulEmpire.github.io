@@ -10,6 +10,9 @@
 .fixit {
     height: 100vh;
 }
+.aboutfix {
+    height: 135vh;
+}
 
 /* Navbar and Hero */
 
@@ -65,7 +68,27 @@
 }
 
 /* Footer Below */
-
+.f-content ul{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas: 
+    "linkss logo links"
+    ;
+}
+#left {
+    grid-area: linkss;
+}
+#links2 {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    li {
+        list-style-type: none;
+    }
+}
+#right {
+    grid-area: links;
+}
 #footer {
     display: grid;
     justify-content: center;
@@ -83,19 +106,17 @@
         text-decoration: none;
         color: black;
         font-size: 1.125rem;
+        list-style: none;
     }
 }
 #footer a.topnav:hover {
     text-decoration: underline;
 }
-.f-content ul {
-    gap: 10rem;
-    font-size: 1.125rem;
+.links1 {
     list-style: none;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    grid-area: content;
 }
 #copyright {
     grid-area: copy;
@@ -192,7 +213,7 @@
     padding: 0px 50px;
 }
 #forgiveness img {
-    width: 500px;
+    width: 35vw;
 }
 #eleven-eleven img {
     width: 100%;
@@ -437,7 +458,7 @@
         width: 100%;
         object-fit: contain;
         height: 50vh;
-        margin: 50px auto;
+        margin: 0px auto 50px auto;
     }
 }
 
@@ -577,16 +598,6 @@ input[type='submit']:hover {
     #ourstory-img {
         padding-top: 40px;
     }
-    #footer {
-        background-color: #FFFBF4;
-        a {
-            font-size: 1rem;
-        }
-    }
-    .f-content ul {
-        gap: 7rem;
-        font-size: 1rem;
-    }
     
 }
 @media screen and (max-width: 1950px) {
@@ -617,10 +628,6 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 1490px) {
-    .f-content ul{
-        flex-wrap: wrap;
-        row-gap: 14px;
-    }
     #links-container{
         flex-wrap: wrap;
         row-gap: 14px;
@@ -719,6 +726,8 @@ input[type='submit']:hover {
     }
     #ourstory-img {
         margin-top: 20px;
+        display: flex;
+        justify-content: center;
     }
     #insurance-title {
         h2 {
@@ -751,7 +760,6 @@ input[type='submit']:hover {
 @media screen and (max-width: 980px) {
     #ourstory-img img {
         width: 60%;
-        margin-left: 135px;
     }
 }
 @media screen and (max-width: 800px){
@@ -770,13 +778,19 @@ input[type='submit']:hover {
         margin-bottom: 0px;
     }
 }
+@media screen and (max-width: 850px) {
+    .f-content {
+        margin: 36px;
+    }
+    .links1 {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
 @media screen and (max-width: 775px) {
     #mission-img {
         display: flex;
         justify-content: center;
-    }
-    #ourstory-img img {
-        margin-left: 115px;
     }
 }
 @media screen and (max-width: 715px) {
@@ -826,6 +840,14 @@ input[type='submit']:hover {
         p {
             margin: 36px 16px;
         }
+    }
+    .f-content {
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 396px) {
+    #links2 {
+        width: 40vw;
     }
 }
 
