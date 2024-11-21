@@ -366,7 +366,7 @@
 
 #events-content {
     border: 3px double black;
-    margin: 100px auto 50px;
+    margin: 100px auto 0px;
     padding-bottom: 80px;
     width: 70%;
     display: flex;
@@ -386,7 +386,7 @@
 }
 
 #upcoming-event-cont {
-    margin: 150px 100px;
+    margin: 0px 50px;
     display: flex;
     justify-content: center;
     img {
@@ -893,7 +893,6 @@ input[type='submit']:hover {
         }
     }
     #upcoming-event-cont {
-        margin: 50px 100px;
         img {
             width: 100%;
             object-fit: contain;
@@ -970,7 +969,7 @@ input[type='submit']:hover {
         margin: 50px 50px 20px 50px;
     }
     #upcoming-event-cont {
-        margin: 0px 40px;
+        margin: 0px 30px;
     }
 }
 @media screen and (max-width: 480px) {
