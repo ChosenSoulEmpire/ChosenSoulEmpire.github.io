@@ -204,6 +204,10 @@
     flex: 1;
     min-width: 330px;
 }
+#cap {
+    text-align: center;
+    padding-top: 10px;
+}
 #eleven {
     display: flex;
     gap: 20px;
