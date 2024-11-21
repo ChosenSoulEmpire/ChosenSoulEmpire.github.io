@@ -235,6 +235,9 @@
         font-size: 1.5rem;
     }
 }
+#ourstory-img img {
+    width: 100%;
+}
 #quote img {
     width: 100%;
     padding: 50px;
