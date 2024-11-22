@@ -486,7 +486,6 @@
     object-fit: cover;
 }
 .selfc-singlecol {
-    border-bottom: 3px double black;
     min-width: 400px;
     margin: 0px auto;
     text-align: center;
@@ -808,6 +807,11 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 775px) {
+    .selfc-singlecol {
+        p {
+            font-size: 1.25rem;
+        }
+    }
     #mission-img {
         display: flex;
         justify-content: center;
