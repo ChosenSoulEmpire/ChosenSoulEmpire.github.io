@@ -11,7 +11,7 @@
     height: 100vh;
 }
 .aboutfix {
-    height: 225vh;
+    height: 100vh;
 }
 
 /* Navbar and Hero */
@@ -395,6 +395,7 @@
     justify-content: center;
     img {
         width: 50%;
+        padding-top: 80px;
     }
 }
 
@@ -839,6 +840,9 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 575px) {
+    .aboutfix {
+        height: 270vh;
+    }
     #mission-container h2 {
         font-size: 1.75rem;
     }
