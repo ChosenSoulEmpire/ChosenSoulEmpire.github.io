@@ -971,6 +971,11 @@ input[type='submit']:hover {
         }
     }
 }
+@media screen and (max-width: 600px) {
+    .fixit {
+        height: 270vh;
+    }
+}
 @media screen and (max-width: 550px) {
     #autism-title {
         margin: 50px;
