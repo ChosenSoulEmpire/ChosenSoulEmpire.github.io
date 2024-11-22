@@ -11,7 +11,7 @@
     height: 100vh;
 }
 .aboutfix {
-    height: 135vh;
+    height: 225vh;
 }
 
 /* Navbar and Hero */
@@ -227,15 +227,19 @@
 #our-story {
     text-align: center;
     margin: 0px;
-    padding: 24px;
+    padding: 24px 70px;
     h2 {
         margin-top: 24px;
         font-size: 2.75rem;
     }
     p {
-        margin: 36px 300px;
+        margin: 36px;
         font-size: 1.5rem;
     }
+}
+#ourstory-img {
+    padding-left: 50px;
+    justify-content: center;
 }
 #ourstory-img img {
     width: 100%;
@@ -599,7 +603,6 @@ input[type='submit']:hover {
             margin-top: 20px;
         }
         p {
-            margin: 36px 200px;
             font-size: 1.145rem;
         }
     }
@@ -630,9 +633,6 @@ input[type='submit']:hover {
         p {
             margin: 36px 30px;
         }
-    }
-    #quote {
-        padding: 20px;
     }
 }
 @media screen and (max-width: 1490px) {
@@ -744,7 +744,9 @@ input[type='submit']:hover {
     #ourstory-img {
         margin-top: 20px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     #insurance-title {
         h2 {
@@ -980,6 +982,15 @@ input[type='submit']:hover {
         p {
             font-size: 1.125rem;
         }
+    }
+}
+@media screen and (max-width: 455px) {
+    #donations-title {
+        padding: 20px;
+        margin: 50px 10px;
+    }
+    #donate-cta {
+        padding-top: 30px;
     }
 }
 @media screen and (max-width: 400px) {
