@@ -180,8 +180,7 @@
 /* Single Column Styles  */
 
 .single-column {
-    width: 72%;
-    min-width: 330px;
+    width: 90%;
     margin: 0px auto;
     p {
         text-align: center;
@@ -204,7 +203,6 @@
     display: flex;
     align-items: center;
     flex: 1;
-    min-width: 330px;
 }
 #cap {
     text-align: center;
@@ -215,11 +213,10 @@
     gap: 20px;
     align-items: center;
     justify-content: center;
-    min-width: 330px;
     padding: 0px 50px;
 }
 #forgiveness img {
-    width: 35vw;
+    width: 65vw;
 }
 #eleven-eleven img {
     width: 100%;
@@ -733,9 +730,6 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 1200px) {
-    .single-column {
-        width: 70%;
-    }
     #two-columns {
         flex-direction: column;
         width: 85%;
@@ -818,6 +812,9 @@ input[type='submit']:hover {
     }
 }
 @media screen and (max-width: 715px) {
+    #eleven {
+        flex-wrap: wrap;
+    }
     #mission {
         grid-template-rows: 1fr;
         grid-template-areas: 
