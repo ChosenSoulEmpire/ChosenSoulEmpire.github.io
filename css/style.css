@@ -92,12 +92,11 @@
 #footer a.topnav:hover {
     text-decoration: underline;
 }
-.f-content ul{
+.f-content ul {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-areas: 
-    "linkss logo links"
-    ;
+    "linkss logo links";
 }
 #left {
     grid-area: linkss;
