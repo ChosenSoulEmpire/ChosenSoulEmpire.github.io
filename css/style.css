@@ -194,7 +194,7 @@
     align-items: center;
     justify-content: center;
     flex: 1;
-    margin: 50px;
+    margin: 50px 20px;
     gap: 50px;
 }
 #ourstory-img {
@@ -245,7 +245,7 @@
         font-size: 2.75rem;
     }
     p {
-        margin: 36px 50px;
+        margin: 36px 20px;
         font-size: 1.5rem;
     }
 }
@@ -317,7 +317,7 @@
 /* Coming Soon Page Styles */
 .coming-soon {
     min-height: 100vh;
-    margin: 50px 100px;
+    margin: 50px;
     gap: 50px;
     display: grid;
     justify-content: center;
@@ -370,22 +370,20 @@
 /* Autism Page */
 
 #autism-single {
-    width: 70%;
+    width: 70vw;
     margin: 0px auto;
     img {
         width: 100%;
-        padding: 0px 50px;
     }
 }
 
 /* Donations Page */
 
 .coming-soon-donate {
-    width: 70%;
+    width: 70vw;
     margin: 0px auto;
     img {
         width: 100%;
-        padding: 0px 50px 100px 50px;
     }
     h2 {
         font-size: 2.75rem;
@@ -529,6 +527,28 @@ input[type='submit']:hover {
     }
     #our-story p {
         font-size: 1.125rem;
+        padding: 30px 0px 0px 0px;
+    }
+    #link1 {
+        font-size: 1.125rem;
+    }
+    #autism-single {
+        width: 90vw;
+    }
+    .selfc-singlecol p {
+        font-size: 1.125rem;
+    }
+    #p1, #p2 {
+        font-size: 1.125rem;
+    }
+    #crisis-list li {
+        font-size: 1.25rem;
+    }
+    #crisis-content ol {
+        padding: 20px;
+    }
+    #zelle {
+        font-size: 1.2rem;
     }
 }
 
@@ -539,6 +559,20 @@ input[type='submit']:hover {
     }
     .f-content {
         padding: 20px;
+    }
+    .bodycopy {
+        width: 90vw;
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    .title-class {
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    .coming-soon h2 {
+        font-size: 3.5rem;
     }
 }
 
