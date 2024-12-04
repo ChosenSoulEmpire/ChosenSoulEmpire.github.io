@@ -219,7 +219,7 @@
 }
 #quote img {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
 }
 
 
@@ -245,7 +245,7 @@
         font-size: 2.75rem;
     }
     p {
-        margin: 36px 20px;
+        margin: 20px;
         font-size: 1.5rem;
     }
 }
@@ -306,6 +306,9 @@
         font-size: 1.5rem;
         padding: 45px;
     }
+}
+#crisis-list li {
+    padding: 10px 0px;
 }
 #p1, #p2 {
     padding: 24px;
@@ -512,70 +515,6 @@ input[type='submit']:hover {
 /* Media Queries Below  */
 
 
-
-/* Home Page */
-
-@media screen and (max-width: 769px) {
-    #mission {
-        grid-template-columns: 1fr;
-    }
-    #eleven {
-        flex-direction: column;
-    }
-    #forgiveness img {
-        width: 100%;
-    }
-    #our-story p {
-        font-size: 1.125rem;
-        padding: 30px 0px 0px 0px;
-    }
-    #link1 {
-        font-size: 1.125rem;
-    }
-    #autism-single {
-        width: 90vw;
-    }
-    .selfc-singlecol p {
-        font-size: 1.125rem;
-    }
-    #p1, #p2 {
-        font-size: 1.125rem;
-    }
-    #crisis-list li {
-        font-size: 1.25rem;
-    }
-    #crisis-content ol {
-        padding: 20px;
-    }
-    #zelle {
-        font-size: 1.2rem;
-    }
-}
-
-@media screen and (max-width: 1025px) {
-    .links1 {
-        flex-direction: column;
-        gap: 12px;
-    }
-    .f-content {
-        padding: 20px;
-    }
-    .bodycopy {
-        width: 90vw;
-        p {
-            font-size: 1.125rem;
-        }
-    }
-    .title-class {
-        p {
-            font-size: 1.125rem;
-        }
-    }
-    .coming-soon h2 {
-        font-size: 3.5rem;
-    }
-}
-
 @media screen and (max-width: 1680px) {
     /* Nav Bar */
     ::-webkit-scrollbar {
@@ -648,5 +587,84 @@ input[type='submit']:hover {
         display: flex;
         flex-direction: column;
         gap: 0px;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .links1 {
+        flex-direction: column;
+        gap: 12px;
+    }
+    .f-content {
+        padding: 20px;
+    }
+    .bodycopy {
+        width: 90vw;
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    .title-class {
+        p {
+            font-size: 1.125rem;
+        }
+    }
+    .coming-soon h2 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    #mission {
+        grid-template-columns: 1fr;
+    }
+    #eleven {
+        flex-direction: column;
+    }
+    #forgiveness img {
+        width: 100%;
+    }
+    #our-story p {
+        font-size: 1.125rem;
+        padding: 30px 0px 0px 0px;
+    }
+    #link1 {
+        font-size: 1.125rem;
+    }
+    #autism-single {
+        width: 90vw;
+    }
+    .selfc-singlecol p {
+        font-size: 1.125rem;
+    }
+    #p1, #p2 {
+        font-size: 1.125rem;
+    }
+    #crisis-content {
+        padding: 130px 30px;
+    }
+    #crisis-list li {
+        font-size: 1.25rem;
+    }
+    #crisis-content ol {
+        padding: 20px;
+    }
+    #zelle {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #our-story p {
+        font-size: .85rem;
+    }
+    .bodycopy {
+        p {
+            font-size: .85rem;
+        }
+    }
+    #p1, #p2 {
+        padding: 24px 0px;
+        font-size: .85rem;
     }
 }
