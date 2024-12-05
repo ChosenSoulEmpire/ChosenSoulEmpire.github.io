@@ -177,6 +177,12 @@
     padding: 50px 0px;
     font-size: 1.5rem;
 }
+#xtra-link {
+    text-align: center;
+    margin: 20px 0px;
+    padding: 50px 0px;
+    font-size: 1.25rem;
+}
 #eleven {
     display: flex;
     align-items: center;
@@ -387,6 +393,7 @@
     margin: 0px auto;
     img {
         width: 100%;
+        padding-bottom: 50px;
     }
     h2 {
         font-size: 2.75rem;
@@ -631,6 +638,9 @@ input[type='submit']:hover {
     #link1 {
         font-size: 1.125rem;
     }
+    #xtra-link {
+        font-size: 1rem;
+    }
     #autism-single {
         width: 90vw;
     }
@@ -652,6 +662,12 @@ input[type='submit']:hover {
     #zelle {
         font-size: 1.2rem;
     }
+    .selfc-singlecol {
+        padding: 20px;
+    }
+    .cta a {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -665,6 +681,27 @@ input[type='submit']:hover {
     }
     #p1, #p2 {
         padding: 24px 0px;
+        font-size: .85rem;
+    }
+    #link1 {
+        font-size: .85rem;
+    }
+    #xtra-link {
+        font-size: .85rem;
+    }
+    .title-class h2 {
+        font-size: 2rem;
+    }
+    .selfc-singlecol h2 {
+        font-size: 2rem;
+    }
+    #crisis-content h2 {
+        font-size: 2rem;
+    }
+    .cta a {
+        padding: 10px 20px;
+    }
+    #zelle {
         font-size: .85rem;
     }
 }
