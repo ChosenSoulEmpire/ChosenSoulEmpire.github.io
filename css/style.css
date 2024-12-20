@@ -458,7 +458,9 @@
     box-shadow: -.5px 4px 12px #9e9081;
     background: linear-gradient(-10deg, #ddd8d4, #fcf6f6, #ffffff);
     a {
-        color: black;
+        color: blue;
+        text-decoration: underline;
+
     }
 }
 
