@@ -7,6 +7,10 @@
 
 /* Fixed Pages */
 
+#offline {
+    text-align: center;
+    margin-top: 50px;
+}
 .fixit {
     min-height: 100vh;
 }
